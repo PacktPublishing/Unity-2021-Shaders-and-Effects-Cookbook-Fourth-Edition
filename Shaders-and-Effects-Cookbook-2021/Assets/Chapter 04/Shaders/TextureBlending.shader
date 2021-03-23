@@ -1,4 +1,4 @@
-Shader "CookbookShaders/Chapter 03/TextureBlending"
+Shader "CookbookShaders/Chapter 04/TextureBlending"
 {
     Properties
     {

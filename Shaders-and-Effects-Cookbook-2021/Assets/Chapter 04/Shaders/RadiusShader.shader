@@ -1,4 +1,4 @@
-Shader "CookbookShaders/Chapter 03/RadiusShader"
+Shader "CookbookShaders/Chapter 04/RadiusShader"
 {
     Properties
     {

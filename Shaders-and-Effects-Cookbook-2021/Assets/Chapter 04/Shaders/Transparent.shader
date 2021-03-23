@@ -1,4 +1,4 @@
-Shader "CookbookShaders/Chapter 03/Transparent"
+Shader "CookbookShaders/Chapter 04/Transparent"
 {
     Properties
     {
