@@ -1,8 +1,9 @@
-Shader "CookbookShaders/Chapter 05/SimpleLambert"
+Shader "CookbookShaders/Chapter 05/ToonShader"
 {
     Properties
     {
       _MainTex("Texture", 2D) = "white"
+      _RampTex("Ramp", 2D) = "white" {}
     }
 
     SubShader
@@ -11,13 +12,14 @@ Shader "CookbookShaders/Chapter 05/SimpleLambert"
         LOD 200
 
         CGPROGRAM
-        // Physically based Standard lighting model, and enable shadows on all light types
-        #pragma surface surf SimpleLambert 
+        // Use the LightingToon function instead
+        #pragma surface surf Toon 
 
         // Use shader model 3.0 target, to get nicer looking lighting
         #pragma target 3.0
 
         sampler2D _MainTex;
+        sampler2D _RampTex;
 
         struct Input
         {
@@ -36,13 +38,14 @@ Shader "CookbookShaders/Chapter 05/SimpleLambert"
             o.Albedo = tex2D(_MainTex, IN.uv_MainTex).rgb;
         }
 
-        // Allows us to use the SimpleLambert lighting mode
-        half4 LightingSimpleLambert(SurfaceOutput s, half3 lightDir,
-                                    half atten)
+        fixed4 LightingToon(SurfaceOutput s, fixed3 lightDir, fixed atten)
         {
-            // First calculate the dot product of the light direction and the 
-            // surface's normal
+            // First calculate the dot product of the light direction and
+            // the surface's normal
             half NdotL = dot(s.Normal, lightDir);
+
+            // Remap NdotL to the value on the ramp map
+            NdotL = tex2D(_RampTex, fixed2(NdotL, 0.5));
 
             // Next, set what color should be returned
             half4 color;
@@ -53,6 +56,7 @@ Shader "CookbookShaders/Chapter 05/SimpleLambert"
             // Return the calculated color
             return color;
         }
+
 
 
         ENDCG
