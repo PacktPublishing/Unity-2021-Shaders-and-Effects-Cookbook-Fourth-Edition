@@ -15,11 +15,16 @@ Shader "CookbookShaders/Chapter 03/Holographic"
           "RenderType" = "Transparent"
         }
 
+        // turn off backface culling to make this shader double-sided
+        Cull Off
+
         LOD 200
 
         CGPROGRAM
         // Physically based Standard lighting model, and enable shadows on all light types
         #pragma surface surf Lambert alpha:fade
+
+
 
         // Use shader model 3.0 target, to get nicer looking lighting
         #pragma target 3.0
