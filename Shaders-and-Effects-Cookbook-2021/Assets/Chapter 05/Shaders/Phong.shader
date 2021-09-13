@@ -54,7 +54,7 @@ Shader "CookbookShaders/Chapter 05/Phong"
             // Final effect 
             fixed4 c;
             c.rgb = (s.Albedo * _LightColor0.rgb * max(0, NdotL) *
-                atten) + (_LightColor0.rgb * finalSpec);
+                atten) + (_LightColor0.rgb * finalSpec * atten);
             c.a = s.Alpha;
             return c;
         }
