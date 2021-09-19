@@ -10,8 +10,12 @@ Shader "CookbookShaders/Chapter 08/WindowShader"
 
     SubShader
     {
-        Tags{ "Queue" = "Transparent" "IgnoreProjector" = "True" 
-              "RenderType" = "Opaque" }
+        Tags
+        { 
+            "Queue" = "Transparent" 
+            "IgnoreProjector" = "True" 
+            "RenderType" = "Transparent" 
+        }
 
 
         //GrabPass{ "_GrabTexture" }    // For a shared texture

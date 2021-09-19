@@ -40,9 +40,9 @@ Shader "CookbookShaders/Chapter 07/VolumetricExplosion"
 
         void vert(inout appdata_full v)
         {
-            float3 disp = tex2Dlod(_NoiseTex, float4(v.texcoord.xy, 0, 0));
-            float time = sin(_Time[3] * _Period + disp.r * 10);
-            v.vertex.xyz += v.normal * disp.r * _Amount * time;
+            float disp = tex2Dlod(_NoiseTex, float4(v.texcoord.xy, 0, 0)).r;
+            float time = sin(_Time[3] * _Period + disp * 10);
+            v.vertex.xyz += v.normal * disp * _Amount * time;
         }
 
 

@@ -5,7 +5,7 @@ Shader "CookbookShaders/Chapter 07/SnowShader"
         _Color("Main Color", Color) = (1.0,1.0,1.0,1.0)
         _MainTex("Base (RGB)", 2D) = "white" {}
         _Bump("Bump", 2D) = "bump" {}
-        _Snow("Level of snow", Range(1, -1)) = 0.5
+        _Snow("Level of snow", Range(-1.0, 1.0)) = 0.5
         _SnowColor("Color of snow", Color) = (1.0,1.0,1.0,1.0)
         _SnowDirection("Direction of snow", Vector) = (0,1,0)
         _SnowDepth("Depth of snow", Range(0,1)) = 0
