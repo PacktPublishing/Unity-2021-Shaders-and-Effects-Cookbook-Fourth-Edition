@@ -188,6 +188,7 @@ GameObject:
   - component: {fileID: 1026448206}
   - component: {fileID: 1026448205}
   - component: {fileID: 1026448204}
+  - component: {fileID: 1026448208}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -268,6 +269,30 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 16.375, z: 0}
+--- !u!114 &1026448208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1026448203}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877bb47ba7f428d47965c03c117e3b56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  curShader: {fileID: 4800000, guid: 9fb31eb47bd57594da11464fa8f65e7f, type: 3}
+  contrast: 3
+  brightness: 0.1
+  nightVisionColor: {r: 0, g: 1, b: 0, a: 1}
+  vignetteTexture: {fileID: 2800000, guid: 29b851ea2b0ba8144964b9b099c6c11b, type: 3}
+  scanLineTexture: {fileID: 2800000, guid: ae6bc040f464b304382aaf92b76d3c64, type: 3}
+  scanLineTileAmount: 4
+  nightVisionNoise: {fileID: 2800000, guid: 8ef2f6a46bc444f45a835cf254075569, type: 3}
+  noiseXSpeed: 100
+  noiseYSpeed: 100
+  distortion: 0.2
+  scale: 0.8
 --- !u!1001 &1047966261
 PrefabInstance:
   m_ObjectHideFlags: 0
