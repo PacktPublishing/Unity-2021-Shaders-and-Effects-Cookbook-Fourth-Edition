@@ -1,9 +1,9 @@
 
-# Unity 2021 Shaders and Effects Cookbook
+# Unity 2021 Shaders and Effects Cookbook - Fouth Edition
 
-<a href="https://www.packtpub.com/product/unity-2021-shaders-and-effects-cookbook-fourth-edition/9781839218620"><img src="https://static.packt-cdn.com/products/9781839218620/cover/smaller" alt="Unity 2021 Shaders and Effects Cookbook" height="256px" align="right"></a>
+<a href="https://www.packtpub.com/product/unity-2021-shaders-and-effects-cookbook-fourth-edition/9781839218620"><img src="https://static.packt-cdn.com/products/9781839218620/cover/smaller" alt="Unity 2021 Shaders and Effects Cookbook - Fourth Edition" height="256px" align="right"></a>
 
-This is the code repository for [Unity 2021 Shaders and Effects Cookbook](https://www.packtpub.com/product/unity-2021-shaders-and-effects-cookbook-fourth-edition/9781839218620), published by Packt.
+This is the code repository for [Unity 2021 Shaders and Effects Cookbook - Fourth Edition](https://www.packtpub.com/product/unity-2021-shaders-and-effects-cookbook-fourth-edition/9781839218620), published by Packt.
 
 **Over 50 recipes to help you transform your game into a visually stunning masterpiece**
 
