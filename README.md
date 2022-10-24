@@ -70,3 +70,7 @@ John is currently an Instructor at George Mason University Korea. Prior to his p
 * [Unity 2017 Mobile Game Development](https://www.packtpub.com/product/unity-2017-mobile-game-development/9781787288713?utm_source=github&utm_medium=repository&utm_campaign=9781787288713)
 * [Unity Game Development Blueprints](https://www.packtpub.com/product/unity-game-development-blueprints/9781783553655?utm_source=github&utm_medium=repository&utm_campaign=9781783553655)
 * [Unity 5.x Game Development Blueprints](https://www.packtpub.com/product/unity-5-x-game-development-blueprints/9781785883118?utm_source=github&utm_medium=repository&utm_campaign=9781785883118)
+### Download a free PDF
+
+ <i>If you have already purchased a print or Kindle version of this book, you can get a DRM-free PDF version at no cost.<br>Simply click on the link to claim your free PDF.</i>
+<p align="center"> <a href="https://packt.link/free-ebook/9781839218620">https://packt.link/free-ebook/9781839218620 </a> </p>
